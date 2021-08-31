@@ -7,17 +7,17 @@ public class Calculadora {
         
         Scanner scan = new Scanner(System.in);
 
-        int a,b;
+        double a,b;
 
         System.out.println("Digite o primeiro valor: ");
-        a = scan.nextInt();
+        a = scan.nextDouble();
         System.out.println("Digite o segundo valor: ");
-        b = scan.nextInt();
+        b = scan.nextDouble();
 
-        int soma = somar(a,b);
-        int subtrai = subtrair(a, b);
-        int multipica = multipicar(a, b);
-        int dividi = dividir(a, b);
+        double soma = somar(a,b);
+        double subtrai = subtrair(a, b);
+        double multipica = multipicar(a, b);
+        double dividi = dividir(a, b);
 
         System.out.println("Somar: " + soma);
         System.out.println("Subtrair: " + subtrai);
@@ -28,19 +28,19 @@ public class Calculadora {
 
     }
 
-    public static int somar(int a, int b) {
+    public static double somar(double a, double b) {
         return a + b;
     }
 
-    public static int subtrair(int a, int b) {
+    public static double subtrair(double a, double b) {
         return a - b;
     }
 
-    public static int multipicar(int a, int b) {
+    public static double multipicar(double a, double b) {
         return a * b;
     }
 
-    public static int dividir(int a, int b) {
+    public static double dividir(double a, double b) {
         return a / b;
     }
 }
